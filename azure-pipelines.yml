@@ -27,6 +27,12 @@ steps:
     openshiftService: 'My OpenShift Connection'
     version: '4.2'
     cmd: 'oc project skilleen-dev'
+- task: oc-cmd@2
+  inputs:
+    connectionType: 'OpenShift Connection Service'
+    openshiftService: 'My OpenShift Connection'
+    version: '4.2'
+    cmd: 'oc status'
 
 - task: oc-cmd@2
   inputs:
