@@ -47,4 +47,4 @@ steps:
     connectionType: 'OpenShift Connection Service'
     openshiftService: 'My OpenShift Connection'
     version: '4.2'
-    cmd: 'oc status'
+    cmd: 'oc start-build fuse-testing-2 --follow'
